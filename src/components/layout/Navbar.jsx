@@ -1,0 +1,94 @@
+import React, { useState } from "react";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Handles the opening and closing of the nav
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <nav className="flex justify-between fixed pt-5 px-5 md:px-10 border border-green-400 w-full   ">
+      <a href="/" className="flex-shrink-0">
+        <img src="/assets/logo/logo-black.svg" alt="" className="w-40" />
+      </a>
+
+      <ul className="hidden md:flex flex-row gap-5 items-center">
+        <li>
+          <a href="/about-us">About us</a>
+        </li>
+        <li>
+          <a href="/services">Services</a>
+        </li>
+        <li>
+          <a href="/use-cases">Use Cases</a>
+        </li>
+        <li>
+          <a href="/pricing">Pricing</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <button className="border border-black p-2 rounded-md">
+          Request a quote
+        </button>
+        </ul>
+
+        {/* Responsive Menu for Mobile */}
+      <div
+        className={`absolute top-16 right-0 bg-black text-white shadow-lg rounded-lg p-5 md:hidden transition-transform duration-300 ease-in-out 
+                ${isOpen ? "translate-x-0" : "translate-x-full"} z-40`}
+      >
+        <ul className="space-y-4">
+        <li>
+          <a href="/about-us">About us</a>
+        </li>
+        <li>
+          <a href="/services">Services</a>
+        </li>
+        <li>
+          <a href="/use-cases">Use Cases</a>
+        </li>
+        <li>
+          <a href="/pricing">Pricing</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        </ul>
+      </div>
+        
+      
+      {/* Hamburger Button */}
+      <button
+          onClick={handleClick}
+          className="md:hidden flex flex-col justify-center items-center"
+        >
+          <span
+            className={`bg-black block transition-all duration-300 ease-out 
+                        h-0.5 w-5 rounded-sm ${
+                          isOpen
+                            ? "rotate-45 translate-y-1"
+                            : "-translate-y-0.5"
+                        }`}
+          ></span>
+          <span
+            className={`bg-black block transition-all duration-300 ease-out 
+                        h-0.5 w-5 rounded-sm my-0.5 ${
+                          isOpen ? "opacity-0" : "opacity-100"
+                        }`}
+          ></span>
+          <span
+            className={`bg-black block transition-all duration-300 ease-out 
+                        h-0.5 w-5 rounded-sm ${
+                          isOpen
+                            ? "-rotate-45 -translate-y-1"
+                            : "translate-y-0.5"
+                        }`}
+          ></span>
+        </button>
+    </nav>
+  );
+};
+
+export default Navbar;
