@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="flex justify-between fixed pt-5 px-5 md:px-10 border border-green-400 w-full   ">
+    <nav className="bg-white flex justify-between fixed pt-5 px-5 md:px-10  w-full h-20 ">
       <a href="/" className="flex-shrink-0">
         <img src="/assets/logo/logo-black.svg" alt="" className="w-40" />
       </a>
@@ -29,9 +30,9 @@ const Navbar = () => {
         <li>
           <a href="/blog">Blog</a>
         </li>
-        <button className="border border-black p-2 rounded-md">
-          Request a quote
-        </button>
+      <Button variant="secondary">Request a quote</Button>
+          
+        
         </ul>
 
         {/* Responsive Menu for Mobile */}
@@ -62,7 +63,7 @@ const Navbar = () => {
       {/* Hamburger Button */}
       <button
           onClick={handleClick}
-          className="md:hidden flex flex-col justify-center items-center"
+          className="md:hidden flex flex-col justify-center items-center mb-5"
         >
           <span
             className={`bg-black block transition-all duration-300 ease-out 

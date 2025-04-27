@@ -4,9 +4,8 @@ import Homepage from './Homepage'
 
 const Layout = () => {
   return (
-    <div className='border '>
-        <div className=''><Navbar /></div>
-        
+    <div className='flex'>
+        <Navbar />
         <Homepage/>
     </div>
   )
