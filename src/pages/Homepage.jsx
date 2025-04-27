@@ -8,7 +8,7 @@ const Homepage = () => {
       {/* Left: text content */}
       <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 w-full">
-        <h1 className="text-[48px]">
+        <h1 className="text-[48px] font-semibold">
           Navigating the digital landscape for success
         </h1>
         {/* Right: illustration */}
@@ -27,7 +27,7 @@ const Homepage = () => {
         </p>
 
         <div className="mt-5 flex justify-center md:justify-start">
-          <Button variant="secondary">Book a consultation</Button>
+          <Button>Book a consultation</Button>
         </div>
       </div>
 
