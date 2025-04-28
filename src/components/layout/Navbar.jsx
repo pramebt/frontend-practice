@@ -9,14 +9,14 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-white flex justify-between fixed pt-5 px-5 md:px-10  w-full h-20 ">
+    <nav className="bg-white flex justify-between fixed pt-5 px-5 md:px-20  w-full h-20 ">
       <a href="/" className="flex-shrink-0">
-        <img src="/assets/logo/logo-black.svg" alt="" className="w-40" />
+        <img src="/assets/logo/logo-black.svg" alt="" className="w-50" />
       </a>
 
-      <ul className="hidden md:flex flex-row gap-5 items-center">
+      <ul className="hidden md:flex flex-row gap-10 items-center">
         <li>
-          <a href="/about-us">About us</a>
+          <a href="/about-us" >About us</a>
         </li>
         <li>
           <a href="/services">Services</a>

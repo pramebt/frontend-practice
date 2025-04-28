@@ -18,11 +18,11 @@ const Button = ({
       variantStyles = 'border  text-black ';
       break;
     case 'tertiary':
-      variantStyles = 'bg-[#B9FF66] hover:bg-red-600 text-black ';
+      variantStyles = 'bg-[#B9FF66]  text-black ';
       break;
     default:
       // ค่าเริ่มต้น (primary)
-      variantStyles = 'bg-[#191A23] hover:bg-[#B9FF66] text-white hover:text-black';
+      variantStyles = 'bg-[#191A23] text-white ';
   }
 
   // รวมคลาสทั้งหมด: baseStyles + variantStyles + className
