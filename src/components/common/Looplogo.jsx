@@ -14,8 +14,8 @@ const LoopLogo = () => {
   return (
     <div className="overflow-hidden py-8">
       <div
-        className="flex items-center gap-6 sm:gap-10 md:gap-20  
-        animate-marquee py-8
+        className="flex items-center  gap-6 sm:gap-10 md:gap-20  
+        animate-marquee py-8 
         "
       >
         {[...logoList, ...logoList].map((logo, index) => (

@@ -5,7 +5,7 @@ import ServicesBox from "../components/common/ServicesBox";
 
 const Homepage = () => {
   return (
-    <div className="mt-20 px-5 md:px-20 gap-10 ">
+    <div className="mt-25 px-5 md:px-20 gap-10 ">
       {/* Left: text content */}
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 w-full">
@@ -59,7 +59,7 @@ const Homepage = () => {
           businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div>
+      <div className="px-10 z-0">
         <ServicesBox/>
       </div>
       

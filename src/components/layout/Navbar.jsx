@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-white flex justify-between fixed pt-5 px-5 md:px-20  w-full h-20 ">
+    <nav className="bg-white flex justify-between fixed pt-5 px-5 md:px-20  w-full h-20 z-10">
       <a href="/" className="flex-shrink-0">
         <img src="/assets/logo/logo-black.svg" alt="" className="w-50" />
       </a>
